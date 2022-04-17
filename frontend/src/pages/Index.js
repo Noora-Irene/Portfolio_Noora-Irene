@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import moment from 'moment';
+//import moment from 'moment';
 import 'moment-timezone';
 import Container from 'react-bootstrap/Container';
 import RequestService from '../services/RequestService';
@@ -24,13 +24,17 @@ const Certificates = () => {
 
    const columns = [
       {
-         Header: 'Code',
-         accessor: 'code',
+         title: 'Code',
+         dataIndex: 'code',
+         key: 'code',
+         width: 100
       },
       {
-         Header: 'Provider',
-         accessor: 'provider',
-      },
+         title: 'Provider',
+         dataIndex: 'provider',
+         key: 'provider',
+         width: 100
+      }/*,
       {
          Header: 'Name',
          accessor: 'name'
@@ -50,7 +54,7 @@ const Certificates = () => {
       {
          Header: 'Additional information',
          accessor: 'description'
-      }
+      }*/
    ];
 
    return (

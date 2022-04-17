@@ -9,8 +9,8 @@ const indexRoutes = require('./routes/index.routes');
 /*const corsOption = {
    origin: 'http://localhost:8081/'
 };*/
-// process.env.PORT lets the port be set by Heroku
-const PORT = process.env.PORT || 8080;
+
+const PORT = process.env.PORT;
 
 //exp.use(cors(corsOption));
 exp.use(function (req, res, next) {
