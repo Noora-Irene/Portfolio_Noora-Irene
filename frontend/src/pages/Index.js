@@ -27,34 +27,38 @@ const Certificates = () => {
          title: 'Code',
          dataIndex: 'code',
          key: 'code',
-         width: 100
+         width: 200
       },
       {
          title: 'Provider',
          dataIndex: 'provider',
          key: 'provider',
-         width: 100
-      }/*,
-      {
-         Header: 'Name',
-         accessor: 'name'
+         width: 200
       },
       {
-         Header: 'Badge',
-         accessor: 'image'
+         title: 'Name',
+         dataIndex: 'name',
+         key: 'name',
+         width: 300
       },
       {
-         Header: 'Planned execution date',
-         accessor: 'plannedExecutionDate'
+         title: 'Badge',
+         dataIndex: 'image',
+         key: 'image',
+         width: 200
       },
       {
-         Header: 'Completed',
-         accessor: 'completed'
+         title: 'Execution date',
+         dataIndex: 'plannedExecutionDate',
+         key: 'plannedExecutionDate',
+         width: 200
       },
       {
-         Header: 'Additional information',
-         accessor: 'description'
-      }*/
+         title: 'Completed',
+         dataIndex: 'completed',
+         key: 'completed',
+         width: 200
+      }
    ];
 
    return (
